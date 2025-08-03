@@ -5,6 +5,7 @@ use rand::Rng;
 #[command(version, about, long_about = None)]
 struct Args {
     #[arg(short, long, default_value_t = 16)]
+    /// Length of the generated password
     length: usize,
 }
 
